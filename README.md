@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 [//]: # (Image References)
 [image1]: ./Doc/MPC_Control_Loop.png
-[image2]: ./Doc/StatePredictEquation.png
+[image2]: ./Doc/StatePredictEquation.PNG
 [image3]: ./Doc/MPC_Path_Plot.png
 [image4]: ./Doc/MPC_Driving.gif
 
@@ -19,6 +19,7 @@ The MPC program consists of modules as follow: state update, polyfitting on plan
 ## The Model in MPC
 
 In the MPC model, the state info includes: x and y poistion (reference to car), yaw, speed, CTE, and epsi. And the actuators are: steering angle (delta), and acceleration (a). The model would predict the next state based on the current state and actuators. The equations are:
+
 ![MPC Control Loop][image2]
 
 The method to predict CTE and epsi is to calculate the difference between predict state and planned path (represented by coefficients from the poly-fitting)
